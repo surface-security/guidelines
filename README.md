@@ -23,9 +23,11 @@ Anyone is welcome to open new issues in the respective projects - and in fact we
 
 # Contributing
 
-Anyone is welcome to contribute with code to all repositories. Some notes on how to do so:
+Anyone is welcome to contribute with code to all repositories. The below are some of the common and transversal rules for Surface Security repositories:
 
 - We promote [feature branch type of development](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches): clone the repository, create a new branch and open a pull request against your branch;
-- Each project should have the specific instructions to build and run the project - no PR should be merged with failing tests so, please, try to have a working build beforing opening a PR; 
-- Be descriptive in the pull request description, explaining what it fixes or adds, as well as the underlying issue that motivated the code change;
-- New versions are published only when tags are created (and only admins have the rights to push tags);
+- Write [good commit messages](https://initialcommit.com/blog/git-commit-messages-best-practices), good pull request descriptions, follow the issue templates as close as possible, and be an overall good citizen in this public space. Although we do not have a specific convention, it should be clear what is changing, or what is the request, or why a pull request matters;
+- All projects should leverage semantic versioning, git tags and git releases to publish packages. When preparing a new release, use [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) for reference on what headings the new release should contain. We might take more than one change before releasing a new version, depending on the level of breaking changes or not;
+
+
+Each project should have specific instructions on how to build, test and run the project (which we are lacking on most but actively working on it).
