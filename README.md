@@ -29,5 +29,10 @@ Anyone is welcome to contribute with code to all repositories. The below are som
 - Write [good commit messages](https://initialcommit.com/blog/git-commit-messages-best-practices), good pull request descriptions, follow the issue templates as close as possible, and be an overall good citizen in this public space. Although we do not have a specific convention, it should be clear what is changing, or what is the request, or why a pull request matters;
 - All projects should leverage semantic versioning, git tags and git releases to publish packages. When preparing a new release, use [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) for reference on what headings the new release should contain. We might take more than one change before releasing a new version, depending on the level of breaking changes or not;
 
+**When not specified, the default contributing guidelines should fall into [Surface's](https://github.com/surface-security/surface/wiki/Contributing-Guidelines).**
 
-Each project should have specific instructions on how to build, test and run the project (which we are lacking on most but actively working on it).
+# Documentation
+
+The project's README should have quick start guides to get users going but the project should have a comprehensive set of instructions to run, develop and contribute to the project in the Wiki tab. Example: https://github.com/surface-security/surface/wiki
+
+The project's documentation must be comprehensive, consider different expertise and experience levels, and should contain the required instructions to allow users to install, set up and have the module or application running. More specifically, it should list required steps to build, optional tweaks users can use, and code samples when necessary to explain the concepts. Never be **cheap** on docs.
