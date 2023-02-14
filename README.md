@@ -31,6 +31,30 @@ Anyone is welcome to contribute with code to all repositories. The below are som
 
 **When not specified, the default contributing guidelines should fall into [Surface's](https://github.com/surface-security/surface/wiki/Contributing-Guidelines).**
 
+
+## Releases
+
+This section describes the release process for the different repository types present in this GitHub organization. 
+There are four types of repositories in this organization:
+1. Apps (Surface)
+1. Libs/Django Apps (`django-abc`)
+1. Scanners (`scanner-abc`)
+1. Utility apps
+
+An important regard in this topic is **all releases should follow the [semver](https://semver.org) guidelines.
+
+**[Surface](https://github.com/surface-security/surface)** enjoys being the end product and therefore it contains the most straightforward process of them all:
+- Devs create their branch and open pull requests against the default branch (`main`). This process creates a temporary package that is pushed to the GitHub repository, in case we need to test the final build or check the end product.
+- Code is reviewed, approved and merged. This does not publish a new package.
+- When maintainers want a new release of the application, they have to use git tags and GitHub releases to produce a final package that gets published into the GitHub registry. This tag will be consumed by GitHub actions to know which version to publish.
+
+**Other library-style apps** enjoy a different, more controlled process:
+- Devs create tehir branch and open pull requests against the default branch (which is **`develop`** in this case). No package is produced at this stage, neither after merge.
+- When maintainers have sufficient changes and/or want to create a release candidate (`rc`) for field testing, they have to create a git tag and a release to push the build to the registry.
+    - If we need to fix things in `rc` builds, we just expand on that: `rc1`, `rc2`, `rc3` and so on, as many as necessary.
+- After some field testing, maintainers can publish an official build, leveraging the same process: git tags and release. 
+
+
 # Documentation
 
 The project's README should have quick start guides to get users going but the project should have a comprehensive set of instructions to run, develop and contribute to the project in the Wiki tab. Example: https://github.com/surface-security/surface/wiki
